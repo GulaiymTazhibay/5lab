@@ -1,39 +1,32 @@
 <html>
-</html>
 <script>
 Student = {}
-Student['aty'] = "Gulaiym"
-Student['fam'] = "Tazhibayeva"
-Student['jasy'] = "24"
-Student['mamandyk'] = "Informatica"
-
-Student1 = {
-Student1 :aty = "Asel",
-Student1 :fam = "Ersultan",
-Student1 :jasy = "22",
-Student1 :mamandyk = "Informatica"}
+Student['name'] = "Gulaiym"
+Student['surname'] = "Tazhibayeva"
+Student['specialty'] = "Programmist?"
 Student.points = {
-"js" : 85,
-"stp" : 100, 
-"ps" : 95,
-"tbd" : 100
+"js" : 95,
+"stp" : 92, 
+"tdb" : 89,
+
+}
+Student1 = {
+name: "Nurbek",
+surname: "Nurlanbekyly"
 }
 var array = []
 array.push(Student)
 array.push(Student1)
-
 console.log(Student);
-console.log(Student["aty"]);
+console.log(Student["surname"]);
 console.log(Student.points.js);
-delete Student.fam;
-console.log(Student.fam); 
-Student.jasy="21"
-console.log(Student.jasy);
-var sum=0;
+delete Student.name;
+console.log(Student.name); 
+Student.name="Ersultan"
+console.log(Student.name);
 function calc(Student){
-for (var key in Student.points ){
-sum+=Student.points[key]}
-return sum/Student.points.length[key] ; 
+for(var lenght in Student.points){
+console.log(Student[lenght]);
 }
-console.log(Student)
+}
 </script>
